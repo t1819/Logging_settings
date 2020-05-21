@@ -2,7 +2,7 @@
 
 ## How to use logging in python:
 ---
-* Setting will be store into a file named **logging.ini**.
+* Setting will be store into a file named **log.ini**.
 * Following steps are used in the all python files.
 ```python
 #Default logging setting
