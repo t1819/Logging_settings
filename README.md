@@ -4,6 +4,8 @@
 ---
 * Following steps are used in the all python files.
 ```python
+import logging, logging.config
+
 #Default logging setting
 logging.config.fileConfig("log.ini")
 logger = logging.getLogger('sLogger')
@@ -44,7 +46,7 @@ args=(sys.stdout,)
 class=FileHandler
 level=DEBUG
 formatter=fileFormatter
-args=('log\\debug.log',)
+args=('debug.log',)
 
 [formatter_fileFormatter]
 format=[%(asctime)s] %(levelname)s %(name)s %(module)s %(funcName)s "%(message)s"
